@@ -43,17 +43,17 @@ int main()
     cout << "\nMasukkan Jurusan Anda : ";
     cin >> d;
 
-    if (d<=1 && d>=1) {
+    if (d==1) {
         cout << "Jurusan Anda Adalah Teknik Informatika"<< endl;
     }
-    if (d<=2 && d>=2) {
+    if (d==2) {
         cout << "Jurusan Anda Adalah Teknik Informasi"<< endl;
     }
-    if (d<=3 && d>=3) {
+    if (d==3) {
         cout << "Jurusan Anda Adalah DKV"<< endl;
     }
-    if (d<1 && d>3) {
-        cout << "Jurusan Tidak Diketahui" << endl;
+    if (d<1 || d>3) {
+        cout << "Jurusan Anda Tidak Diketahui"<< endl;
     }
 
     return 0;
